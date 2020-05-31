@@ -1,0 +1,11 @@
+Hi Raghu,
+
+I have created new instance Name as workstation for terraform.
+I am facing below login issue.
+
+$ ssh root@52.32.78.16
+root@52.32.78.16: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+
+
+solution:
+ssh -i vamsi.pem ec2-user@54.212.194.171
