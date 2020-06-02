@@ -43,3 +43,8 @@ variable "MAP" {
 output "MAP" {
   value = var.MAP["Vamsi"]
 }
+
+variable "ENVIRONMENT" {}
+output "ENVIRONMENT" {
+  value = var.ENVIRONMENT
+}
