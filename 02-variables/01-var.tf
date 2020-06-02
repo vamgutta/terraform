@@ -1,5 +1,5 @@
 variable "NAME" {
-  default = "DevOps"
+  default = "DevOps with AWS"
 }
 
 
