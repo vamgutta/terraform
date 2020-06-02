@@ -31,7 +31,7 @@ output "LIST"{
   value = var.LIST
 }
 
-output "LIST"{
+output "LIST1"{
   value = var.LIST[0]
 }
 
