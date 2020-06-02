@@ -34,4 +34,12 @@ output "LIST"{
 output "LIST1"{
   value = var.LIST[0]
 }
-
+variable "MAP" {
+  default = {
+    "Vamsi"     = "GOOD MAN"
+    "Sravanthi" = "GOOD Women"
+  }
+}
+output "MAP" {
+  value = var.MAP["Vamsi"]
+}
