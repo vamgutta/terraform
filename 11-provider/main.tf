@@ -1,14 +1,6 @@
 provider "aws" {
   region     = "us-west-2"
 }
-resource "aws_instance" "web" {
-  ami           = "i-066f928e72d27e859"
-  instance_type = "t2.micro"
-
-  tags = {
-    Name = "HelloWorld"
-  }
-}
 
 resource "aws_vpc" "terra_vpc" {
   cidr_block       = "162.32.0.0/16"
