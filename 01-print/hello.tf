@@ -1,3 +1,3 @@
 output "Message" {
-  value = "Hello World Abhinava Shaurya Gutta"
+  value = "Vamsi Krishna Abhinava Shaurya Gutta"
 }
