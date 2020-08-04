@@ -1,9 +1,9 @@
 provider "aws" {
-  region  = "us-west-2"
+  region  = "${var.region}"
 }
 
 resource "aws_vpc" "main" {
-  cidr_block       = "172.32.0.0/16"
+  cidr_block       = "${var.vpc_cidr}"
   instance_tenancy = "default"
 
   tags = {
@@ -12,7 +12,7 @@ resource "aws_vpc" "main" {
 }
 resource "aws_subnet" "main" {
   vpc_id     = "${aws_vpc.main.id}"
-  cidr_block = "172.32.1.0/24"
+  cidr_block = "${var.subnet_cidr}"
 
   tags = {
     Name = "Terraform_Subnet"
