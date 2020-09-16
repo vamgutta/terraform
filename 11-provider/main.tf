@@ -17,7 +17,7 @@ resource "aws_subnet" "terra_subnet" {
     Name = "Vamsi_Subnet1"
   }
 }
-resource "aws_subnet" "terra_subnet" {
+resource "aws_subnet" "terra_subnet1" {
   vpc_id     = "${aws_vpc.terra_vpc.id}"
   cidr_block = "162.32.2.0/24"
 
