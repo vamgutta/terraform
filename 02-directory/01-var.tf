@@ -27,6 +27,15 @@ variable "List" {
 output "Default" {
   value = var.Default
 }
-output "List" {
-  value = var.List
+output "List1" {
+  value = var.List[0]
+}
+variable "Map" {
+  default = {
+    red = "Apple",
+    yellow = "Banana"
+  }
+}
+output "Fruit_Red" {
+  value = var.Map["red"]
 }
