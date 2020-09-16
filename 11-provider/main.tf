@@ -6,7 +6,7 @@ resource "aws_vpc" "terra_vpc" {
   cidr_block       = "162.32.0.0/16"
   instance_tenancy = "default"
   tags = {
-    Name = "main"
+    Name = "Vamsi_VPC"
   }
 }
 resource "aws_subnet" "terra_subnet" {
